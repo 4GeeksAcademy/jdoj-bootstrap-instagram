@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>boots trap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <!-- inicio de navbar -->
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <i class="fa-brands fa-instagram me-3"></i>
+          <h5>Instagram</h5>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+          <ul class="navbar-nav align-items-center">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">
+                <!-- modal -->
+                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                  data-bs-whatever="@getbootstrap">Create a new post</button>
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                  aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post
+                        </h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <form>
+                          <div class="mb-4">
+                            <label for="message-text" class="col-form-label">Caption:</label>
+                            <textarea class="form-control" placeholder="Add the caption of your post here"
+                              id="message-text"></textarea>
+                          </div>
+                          <div class="icons">
+                            <i class="fa-solid fa-camera border p-2 me-1"></i>
+                            <i class="fa-solid fa-location-dot border p-2"></i>
+                          </div>
+
+                        </form>
+                      </div>
+                      <div class="modal-footer border-bottom">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-success">Send message</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <!-- ç -->
+            <div class="dropdown">
+              <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <i class="fa-solid fa-gear"></i>
+              </a>
+
+              <ul class="dropdown-menu ">
+                <li><a class="dropdown-item" href="#">Profile</a></li>
+                <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                <li><a class="dropdown-item text-danger border-top mt-2" href="#">Log out</a></li>
+              </ul>
+            </div>
+
+            <!-- dropdown end -->
+        </div>
+      </div>
+    </nav>
+    <ul class="nav nav-tabs d-flex justify-content-center mt-3" id="myTab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="grid-tab" data-bs-toggle="tab" data-bs-target="#grid" type="button"
+          role="tab" aria-controls="grid" aria-selected="true"><i class="fa-solid fa-table-cells me-2"></i></button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="feed-tab" data-bs-toggle="tab" data-bs-target="#feed" type="button" role="tab"
+          aria-controls="feed" aria-selected="false"> <i class="fa-solid fa-table-cells-large"></i></button>
+      </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+      <div class="tab-pane fade show active" id="grid" role="tabpanel" aria-labelledby="grid-tab">
+        <!-- Dentro de este div va todo el contenido de la grilla-->
+        <div class="row row-cols-3">
+          <div class="col-my-2 mt-2 mb-2">
+            <img src="https://pbs.twimg.com/media/EdjddYgX0AEGC_5?format=jpg&name=medium"
+              class="img-fluid img-thumbnail">
+          </div>
+          <div class="col-my-2 mt-2 mb-2">
+            <img src="https://pbs.twimg.com/media/EdjddYgX0AEGC_5?format=jpg&name=medium"
+              class="img-fluid img-thumbnail">
+          </div>
+          <div class="col-my-2 mt-2 mb-2">
+            <img src="https://pbs.twimg.com/media/EdjddYgX0AEGC_5?format=jpg&name=medium"
+              class="img-fluid img-thumbnail">
+          </div>
+          <div class="col-my-2 mt-2 mb-2">
+            <img src="https://pbs.twimg.com/media/EdjddYgX0AEGC_5?format=jpg&name=medium"
+              class="img-fluid img-thumbnail">
+          </div>
+          <div class="col-my-2 mt-2 mb-2">
+            <img src="https://pbs.twimg.com/media/EdjddYgX0AEGC_5?format=jpg&name=medium"
+              class="img-fluid img-thumbnail">
+          </div>
+          <div class="col-my-2 mt-2 mb-2">
+            <img src="https://pbs.twimg.com/media/EdjddYgX0AEGC_5?format=jpg&name=medium"
+              class="img-fluid img-thumbnail">
+          </div>
+          <div class="col-my-2 mt-2 mb-2">
+            <img src="https://pbs.twimg.com/media/EdjddYgX0AEGC_5?format=jpg&name=medium"
+              class="img-fluid img-thumbnail">
+          </div>
+          <div class="col-my-2 mt-2 mb-2">
+            <img src="https://pbs.twimg.com/media/EdjddYgX0AEGC_5?format=jpg&name=medium"
+              class="img-fluid img-thumbnail">
+          </div>
+          <div class="col-my-2 mt-2 mb-2">
+            <img src="https://pbs.twimg.com/media/EdjddYgX0AEGC_5?format=jpg&name=medium"
+              class="img-fluid img-thumbnail">
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="feed" role="tabpanel" aria-labelledby="feed-tab">
+        <!-- Dentro de este otro div va todo el contenido de tu feed -->
+        <div class="container" class="mx-auto" style="width: 700px;">
+          <div class="card m-4 d-flex justify-content-center" style="width: 40rem;">
+            <div class="header d-flex position-relative">
+              <h5 class="card-title ms-2 mt-2">Tioahe</h5>
+              <p class="fecha position-absolute mt-2 end-0 me-3">27/05</p>
+            </div>
+            <img
+              src=" https://scontent.fmad11-1.fna.fbcdn.net/v/t39.30808-6/322708687_858583788685872_6633174176334876643_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=5f2048&_nc_ohc=HT9cYReuY0oAb5UZCqG&_nc_ht=scontent.fmad11-1.fna&oh=00_AfAHWOdSVFjruF0MLGvB2Ymst_tbuVep-pEQ-mVzJnsAxA&oe=661EB9AE"
+              class="img-fluid img-thumbnail" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Primer trimestre 2024.</p>
+            </div>
+          </div>
+          <div class="card m-4" style="width: 40rem;">
+            <div class="header d-flex position-relative">
+              <h5 class="card-title ms-2 mt-2">Tioahe</h5>
+              <p class="fecha position-absolute mt-2 end-0 me-3">07/10</p>
+            </div>
+            <img
+              src="https://scontent.fmad11-1.fna.fbcdn.net/v/t1.6435-9/129476447_819813005245680_352051501563154216_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_ohc=k-x8G_g7POYAb7VuCqH&_nc_ht=scontent.fmad11-1.fna&oh=00_AfDvjyeHuTTDzm9mbZ_qsXmtVT8GRxLqPQK55MXprPjFbA&oe=66405FA4"
+              class="img-fluid img-thumbnail" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text"> :) </p>
+            </div>
+          </div>
+          <div class="card m-4" style="width: 40rem;">
+            <div class="header d-flex position-relative">
+              <h5 class="card-title ms-2 mt-2">Tioahe</h5>
+              <p class="fecha position-absolute mt-2 end-0 me-3">05/08</p>
+            </div>
+            <img src="https://pbs.twimg.com/media/FD8V4S0X0AoCNS0?format=jpg&name=4096x4096"
+              class="img-fluid img-thumbnail" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text border-bottom">Si vas a borrar no tardes, que en las notis se ve.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- fin de navbar -->
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
