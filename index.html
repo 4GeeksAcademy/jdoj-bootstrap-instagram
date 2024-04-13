@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>boots trap demo</title>
+  <title>JD Bootsrap demo</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -13,132 +13,123 @@
 </head>
 
 <body>
-  <!-- inicio de navbar -->
-  <div class="container-fluid">
-    <nav class="navbar navbar-expand-lg bg-light">
-      <div class="container">
-        <a class="navbar-brand d-flex align-items-center" href="#">
-          <i class="fa-brands fa-instagram me-3"></i>
-          <h5>Instagram</h5>
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-          <ul class="navbar-nav align-items-center">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">
-                <!-- modal -->
-                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal"
-                  data-bs-whatever="@getbootstrap">Create a new post</button>
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                  aria-hidden="true">
-                  <div class="modal-dialog">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post
-                        </h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                      </div>
-                      <div class="modal-body">
-                        <form>
-                          <div class="mb-4">
-                            <label for="message-text" class="col-form-label">Caption:</label>
-                            <textarea class="form-control" placeholder="Add the caption of your post here"
-                              id="message-text"></textarea>
-                          </div>
-                          <div class="icons">
-                            <i class="fa-solid fa-camera border p-2 me-1"></i>
-                            <i class="fa-solid fa-location-dot border p-2"></i>
-                          </div>
+  <!-- nav -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid sm xl">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <i class="fa-brands fa-instagram me-2"></i>
+        <h5>Instagram</h5>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+        <ul class="navbar-nav align-items-center">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">
+              <!-- modal -->
+              <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                data-bs-whatever="@getbootstrap">Create a new post</button>
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post
+                      </h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <form>
+                        <div class="mb-4">
+                          <label for="message-text" class="col-form-label">Caption:</label>
+                          <textarea class="form-control" placeholder="Add the caption of your post here"
+                            id="message-text"></textarea>
+                        </div>
+                        <div class="icons">
+                          <i class="fa-solid fa-camera border p-2 me-1"></i>
+                          <i class="fa-solid fa-location-dot border p-2"></i>
+                        </div>
 
-                        </form>
-                      </div>
-                      <div class="modal-footer border-bottom">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-success">Send message</button>
-                      </div>
+                      </form>
+                    </div>
+                    <div class="modal-footer border-bottom">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-success">Send message</button>
                     </div>
                   </div>
                 </div>
-              </a>
-            </li>
-            <!-- ç -->
-            <div class="dropdown">
-              <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                <i class="fa-solid fa-gear"></i>
-              </a>
+              </div>
+            </a>
+          </li>
+          <!-- ç -->
+          <div class="nav-item dropdown">
+            <button class="btn btn-secondary dropdown-toggle " href="#" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fa-solid fa-gear"></i>
+            </button>
+            <ul class="dropdown-menu ">
+              <li><a class="dropdown-item" href="#">Profile</a></li>
+              <li><a class="dropdown-item" href="#">Accesibility</a></li>
+              <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+              <li><a class="dropdown-item text-danger border-top mt-2" href="#">Log out</a></li>
+            </ul>
+          </div>
 
-              <ul class="dropdown-menu ">
-                <li><a class="dropdown-item" href="#">Profile</a></li>
-                <li><a class="dropdown-item" href="#">Accesibility</a></li>
-                <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
-                <li><a class="dropdown-item text-danger border-top mt-2" href="#">Log out</a></li>
-              </ul>
-            </div>
-
-            <!-- dropdown end -->
+          <!-- dropdown end -->
+      </div>
+    </div>
+  </nav>
+  <ul class="nav nav-tabs d-flex justify-content-center mt-3 " id="myTab" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active" id="grid-tab" data-bs-toggle="tab" data-bs-target="#grid" type="button" role="tab"
+        aria-controls="grid" aria-selected="true"><i class="fa-solid fa-table-cells me-2"></i></button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="feed-tab" data-bs-toggle="tab" data-bs-target="#feed" type="button" role="tab"
+        aria-controls="feed" aria-selected="false"> <i class="fa-solid fa-table-cells-large"></i></button>
+    </li>
+  </ul>
+  <div class="tab-content" id="myTabContent">
+    <div class="tab-pane fade show active" id="grid" role="tabpanel" aria-labelledby="grid-tab">
+      <!-- Dentro de este div va todo el contenido de la grilla-->
+      <div class="row row-cols-3">
+        <div class="col-6 col-xl-4 my-2 mt-2 mb-2">
+          <img src="https://pbs.twimg.com/media/EdjddYgX0AEGC_5?format=jpg&name=medium" class="img-fluid img-thumbnail">
+        </div>
+        <div class="col-6 col-xl-4 my-2 mt-2 mb-2">
+          <img src="https://pbs.twimg.com/media/EdjddYgX0AEGC_5?format=jpg&name=medium" class="img-fluid img-thumbnail">
+        </div>
+        <div class="col-6 col-xl-4  my-2 mt-2 mb-2">
+          <img src="https://pbs.twimg.com/media/EdjddYgX0AEGC_5?format=jpg&name=medium" class="img-fluid img-thumbnail">
+        </div>
+        <div class="col-6 col-xl-4 my-2 mt-2 mb-2">
+          <img src="https://pbs.twimg.com/media/EdjddYgX0AEGC_5?format=jpg&name=medium" class="img-fluid img-thumbnail">
+        </div>
+        <div class="col-6 col-xl-4 my-2 mt-2 mb-2">
+          <img src="https://pbs.twimg.com/media/EdjddYgX0AEGC_5?format=jpg&name=medium" class="img-fluid img-thumbnail">
+        </div>
+        <div class="col-6 col-xl-4 my-2 mt-2 mb-2">
+          <img src="https://pbs.twimg.com/media/EdjddYgX0AEGC_5?format=jpg&name=medium" class="img-fluid img-thumbnail">
+        </div>
+        <div class="col-6 col-xl-4 my-2 mt-2 mb-2">
+          <img src="https://pbs.twimg.com/media/EdjddYgX0AEGC_5?format=jpg&name=medium" class="img-fluid img-thumbnail">
+        </div>
+        <div class="col-6 col-xl-4 my-2 mt-2 mb-2">
+          <img src="https://pbs.twimg.com/media/EdjddYgX0AEGC_5?format=jpg&name=medium" class="img-fluid img-thumbnail">
+        </div>
+        <div class="col-6 col-xl-4 my-2 mt-2 mb-2">
+          <img src="https://pbs.twimg.com/media/EdjddYgX0AEGC_5?format=jpg&name=medium" class="img-fluid img-thumbnail">
         </div>
       </div>
-    </nav>
-    <ul class="nav nav-tabs d-flex justify-content-center mt-3" id="myTab" role="tablist">
-      <li class="nav-item" role="presentation">
-        <button class="nav-link active" id="grid-tab" data-bs-toggle="tab" data-bs-target="#grid" type="button"
-          role="tab" aria-controls="grid" aria-selected="true"><i class="fa-solid fa-table-cells me-2"></i></button>
-      </li>
-      <li class="nav-item" role="presentation">
-        <button class="nav-link" id="feed-tab" data-bs-toggle="tab" data-bs-target="#feed" type="button" role="tab"
-          aria-controls="feed" aria-selected="false"> <i class="fa-solid fa-table-cells-large"></i></button>
-      </li>
-    </ul>
-    <div class="tab-content" id="myTabContent">
-      <div class="tab-pane fade show active" id="grid" role="tabpanel" aria-labelledby="grid-tab">
-        <!-- Dentro de este div va todo el contenido de la grilla-->
-        <div class="row row-cols-3">
-          <div class="col-my-2 mt-2 mb-2">
-            <img src="https://pbs.twimg.com/media/EdjddYgX0AEGC_5?format=jpg&name=medium"
-              class="img-fluid img-thumbnail">
-          </div>
-          <div class="col-my-2 mt-2 mb-2">
-            <img src="https://pbs.twimg.com/media/EdjddYgX0AEGC_5?format=jpg&name=medium"
-              class="img-fluid img-thumbnail">
-          </div>
-          <div class="col-my-2 mt-2 mb-2">
-            <img src="https://pbs.twimg.com/media/EdjddYgX0AEGC_5?format=jpg&name=medium"
-              class="img-fluid img-thumbnail">
-          </div>
-          <div class="col-my-2 mt-2 mb-2">
-            <img src="https://pbs.twimg.com/media/EdjddYgX0AEGC_5?format=jpg&name=medium"
-              class="img-fluid img-thumbnail">
-          </div>
-          <div class="col-my-2 mt-2 mb-2">
-            <img src="https://pbs.twimg.com/media/EdjddYgX0AEGC_5?format=jpg&name=medium"
-              class="img-fluid img-thumbnail">
-          </div>
-          <div class="col-my-2 mt-2 mb-2">
-            <img src="https://pbs.twimg.com/media/EdjddYgX0AEGC_5?format=jpg&name=medium"
-              class="img-fluid img-thumbnail">
-          </div>
-          <div class="col-my-2 mt-2 mb-2">
-            <img src="https://pbs.twimg.com/media/EdjddYgX0AEGC_5?format=jpg&name=medium"
-              class="img-fluid img-thumbnail">
-          </div>
-          <div class="col-my-2 mt-2 mb-2">
-            <img src="https://pbs.twimg.com/media/EdjddYgX0AEGC_5?format=jpg&name=medium"
-              class="img-fluid img-thumbnail">
-          </div>
-          <div class="col-my-2 mt-2 mb-2">
-            <img src="https://pbs.twimg.com/media/EdjddYgX0AEGC_5?format=jpg&name=medium"
-              class="img-fluid img-thumbnail">
-          </div>
-        </div>
-      </div>
-      <div class="tab-pane fade" id="feed" role="tabpanel" aria-labelledby="feed-tab">
-        <!-- Dentro de este otro div va todo el contenido de tu feed -->
-        <div class="container" class="mx-auto" style="width: 700px;">
-          <div class="card m-4 d-flex justify-content-center" style="width: 40rem;">
+    </div>
+    <div class="tab-pane fade" id="feed" role="tabpanel" aria-labelledby="feed-tab">
+      <!-- Dentro de este otro div va todo el contenido de tu feed -->
+      <div class=" feed d-flex justify-content-center text-center">
+        <div class="">
+        <div class="">
+              <div class="card shadow m-3" style="width:20rem;">
             <div class="header d-flex position-relative">
               <h5 class="card-title ms-2 mt-2">Tioahe</h5>
               <p class="fecha position-absolute mt-2 end-0 me-3">27/05</p>
@@ -150,7 +141,9 @@
               <p class="card-text">Primer trimestre 2024.</p>
             </div>
           </div>
-          <div class="card m-4" style="width: 40rem;">
+        </div>
+        <div class="">
+          <div class="card shadow m-3" style="width: 20rem;">
             <div class="header d-flex position-relative">
               <h5 class="card-title ms-2 mt-2">Tioahe</h5>
               <p class="fecha position-absolute mt-2 end-0 me-3">07/10</p>
@@ -162,7 +155,9 @@
               <p class="card-text"> :) </p>
             </div>
           </div>
-          <div class="card m-4" style="width: 40rem;">
+        </div>
+        <div class="">
+          <div class="card shadow m-3" style="width: 20rem;">
             <div class="header d-flex position-relative">
               <h5 class="card-title ms-2 mt-2">Tioahe</h5>
               <p class="fecha position-absolute mt-2 end-0 me-3">05/08</p>
@@ -174,9 +169,11 @@
             </div>
           </div>
         </div>
+        </div>
       </div>
     </div>
   </div>
+
   <!-- fin de navbar -->
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
